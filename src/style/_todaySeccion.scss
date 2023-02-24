@@ -1,0 +1,193 @@
+
+#todayDIV {
+    display: none;
+    opacity: 0;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    /*background-color: azure;*/
+
+    z-index: 10001;
+}
+
+#todayDIV .close {
+    position: absolute;
+
+    left: 30px;
+    bottom: 30px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    color: white;
+    
+    opacity: 0;
+    display: none;
+}
+
+#todayDIV .barras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#todayDIV .barCont {
+    position: absolute;
+
+    width: 25%;
+    height: 100%;
+
+    top: -100%; //-1080px
+
+    border-left: solid 3px black;
+
+    overflow: hidden;
+}
+
+#todayDIV .barras :first-child {
+    border-left: none;
+}
+
+#todayDIV .scale {
+    position: absolute;
+}
+
+#todayDIV .bar_cont1 {
+    left: 0%;
+    background-color: aqua;
+}
+    #todayDIV .barra_1 {
+        position: absolute;
+        height: 100%;
+    }
+
+    #todayDIV .barra_1 img {
+        height: 100vh;
+
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-17%);
+    }
+
+
+#todayDIV .bar_cont2 {
+    left: 25%;
+    background-color: azure;
+}
+    #todayDIV .barra_2 {
+        position: absolute;
+       height: 100%;
+    }
+
+    #todayDIV .barra_2 img {
+        height: 100vh;
+        
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-54%);
+    }
+
+
+#todayDIV .bar_cont3 {
+    left: 50%;
+    background-color: blueviolet;
+}
+    #todayDIV .barra_3 {
+        position: absolute;
+        height: 100%;
+    }
+
+    #todayDIV .barra_3 img {
+        height: 100vh;
+
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-49%);
+    }
+
+    #todayDIV .bar_cont4 {
+    left: 75%;
+    background-color: brown;
+}
+
+    #todayDIV .barra_4 {
+        position: absolute;
+        height: 100%;
+    }
+
+    #todayDIV .barra_4 img {
+        height: 100vh;
+
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-3%);
+    }
+
+#todayDIV .textitos {
+    position: absolute;
+
+    left: 38px;
+    top: 30px;
+
+    opacity: 0;
+
+    z-index: 10;
+}
+
+#todayDIV .txt1_ {
+    width: 361px;
+    height: 441px;
+}
+
+#todayDIV .txt2_ {
+    width: 382px;
+    height: 219px;
+}
+
+#todayDIV .txt3_ {
+    width: 301px;
+    height: 373px;
+}
+
+#todayDIV .txt4_ {
+    width: 378px;
+    height: 250px;
+}
+
+
+
+#renewableDIV {
+    display: none;
+    opacity: 0;
+}
+                
+#solarDIV {
+    display: none;
+    opacity: 0;
+}
+
+#machineDIV {
+    display: none;
+    opacity: 0;
+}
+
+
+#lowDIV {
+    display: none;
+    opacity: 0;
+}
+
+
+

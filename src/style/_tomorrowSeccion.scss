@@ -1,0 +1,201 @@
+
+#tomorrowDIV {
+    display: none;
+    opacity: 0;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    /*background-color: azure;*/
+
+    z-index: 10001;
+}
+
+#tomorrowDIV .close {
+    position: absolute;
+
+    left: 30px;
+    bottom: 30px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    color: white;
+    
+    opacity: 0;
+    display: none;
+}
+
+#tomorrowDIV .barras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#tomorrowDIV .barCont {
+    position: absolute;
+
+    width: 25%;
+    height: 100%;
+
+    top: -100%; //-1080px
+
+    border-left: solid 3px black;
+
+    overflow: hidden;
+}
+
+#tomorrowDIV .barras :first-child {
+    border-left: none;
+}
+
+#tomorrowDIV .scale {
+    position: absolute;
+}
+
+#tomorrowDIV .bar_cont1 {
+    left: 0%;
+    background-color: aqua;
+}
+    #tomorrowDIV .barra_1 {
+        position: absolute;
+        height: 100%;
+    }
+
+    #tomorrowDIV .barra_1 img {
+        height: 100vh;
+
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-72%);
+    }
+
+
+#tomorrowDIV .bar_cont2 {
+    left: 25%;
+    background-color: azure;
+}
+    #tomorrowDIV .barra_2 {
+        position: absolute;
+       height: 100%;
+    }
+
+    #tomorrowDIV .barra_2 img {
+        height: 100vh;
+        
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-24%);
+    }
+
+
+#tomorrowDIV .bar_cont3 {
+    left: 50%;
+    background-color: blueviolet;
+}
+    #tomorrowDIV .barra_3 {
+        position: absolute;
+        height: 100%;
+    }
+
+    #tomorrowDIV .barra_3 img {
+        height: 100vh;
+
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-14%);
+    }
+
+    #tomorrowDIV .bar_cont4 {
+    left: 75%;
+    background-color: brown;
+}
+
+    #tomorrowDIV .barra_4 {
+        position: absolute;
+        height: 100%;
+    }
+
+    #tomorrowDIV .barra_4 img {
+        height: 100vh;
+
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-40%);
+    }
+
+#tomorrowDIV .textitos {
+    position: absolute;
+
+    left: 54px;
+    top: 30px;
+
+    opacity: 0;
+
+    z-index: 10;
+}
+
+#tomorrowDIV .txt1_ {
+    width: 361px;
+    height: 441px;
+}
+
+#tomorrowDIV .txt2_ {
+    width: 382px;
+    height: 219px;
+}
+
+#tomorrowDIV .txt3_ {
+    width: 301px;
+    height: 373px;
+}
+
+#tomorrowDIV .txt4_ {
+    width: 378px;
+    height: 250px;
+}
+
+
+
+
+
+
+#openranDIV {
+    display: none;
+    opacity: 0;
+}
+
+
+#bigdataDIV {
+    display: none;
+    opacity: 0;
+}
+
+#circularDIV {
+    display: none;
+    opacity: 0;
+}
+
+             
+#fleettomorrowDIV {
+    display: none;
+    opacity: 0;
+}
+
+    #fleettomorrow_Video {
+        width: 100%;
+        height: 100%;
+    }
+
+

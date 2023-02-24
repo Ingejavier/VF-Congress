@@ -1,0 +1,250 @@
+
+#customersDIV {
+    display: none;
+    opacity: 0;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    /*background-color: azure;*/
+
+    z-index: 10001;
+}
+
+#customersDIV .close {
+    position: absolute;
+
+    left: 30px;
+    bottom: 30px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    color: white;
+
+    opacity: 0;
+    display: none;
+}
+
+#customersDIV .barras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#customersDIV .barCont {
+    position: absolute;
+
+    width: 20%;
+    height: 100%;
+
+    top: -100%; //-1080px
+
+    border-left: solid 3px black;
+
+    overflow: hidden;
+}
+
+#customersDIV .barras :first-child {
+    border-left: none;
+}
+
+#customersDIV .scale {
+    position: absolute;
+}
+
+#customersDIV .bar_cont1 {
+    left: 0%;
+    background-color: aqua;
+}
+    #customersDIV .barra_1 {
+        position: absolute;
+        height: 100%;
+    }
+
+    #customersDIV .barra_1 img {
+        height: 100vh;
+
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-17%);
+    }
+
+
+#customersDIV .bar_cont2 {
+    left: 20%;
+    background-color: azure;
+}
+    #customersDIV .barra_2 {
+        position: absolute;
+       height: 100%;
+    }
+
+    #customersDIV .barra_2 img {
+        height: 100vh;
+        
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-58%);
+    }
+
+
+#customersDIV .bar_cont3 {
+    left: 40%;
+    background-color: blueviolet;
+}
+    #customersDIV .barra_3 {
+        position: absolute;
+        height: 100%;
+    }
+
+    #customersDIV .barra_3 img {
+        height: 100vh;
+
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-13%);
+    }
+
+#customersDIV .bar_cont4 {
+    left: 60%;
+    background-color: brown;
+}
+
+    #customersDIV .barra_4 {
+        position: absolute;
+        height: 100%;
+    }
+
+    #customersDIV .barra_4 img {
+        height: 100vh;
+
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-32%);
+    }
+
+#customersDIV .bar_cont5 {
+    left: 80%;
+    background-color: brown;
+}
+    
+    #customersDIV .barra_5 {
+        position: absolute;
+        height: 100%;
+    }
+
+    #customersDIV .barra_5 img {
+        height: 100vh;
+
+        min-width: 100vw;
+        object-position: center bottom;
+        object-fit: cover;
+
+        transform: translateX(-80%);
+    }
+    
+
+
+#customersDIV .textitos {
+    position: absolute;
+
+    left: 34px;
+    top: 30px;
+
+    opacity: 0;
+
+    z-index: 10;
+}
+
+#customersDIV .txt1_ {
+    width: 290px;
+    height: 199px;
+}
+
+#customersDIV .txt2_ {
+    width: 285px;
+    height: 259px;
+}
+
+#customersDIV .txt3_ {
+    width: 313px;
+    height: 319px;
+}
+
+#customersDIV .txt4_ {
+    width: 284px;
+    height: 439px;
+}
+
+#customersDIV .txt5_ {
+    width: 331px;
+    height: 270px;
+}
+
+
+
+/* FIRES */
+#firesDIV {
+    display: none;
+    opacity: 0;
+}
+
+
+
+/* WATER */
+#waterDIV {
+    display: none;
+    opacity: 0;
+}
+
+    #water_Video {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+/* URBAN GREEN */
+#urbangreenDIV {
+    display: none;
+    opacity: 0;
+}
+
+    #urbangreen_Video {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+/* ELECTRIC CARS */
+#electriccarsDIV {
+    display: none;
+    opacity: 0;
+}
+   
+
+
+
+/* FLEET */
+#fleetDIV {
+    display: none;
+    opacity: 0;
+}
+
+    #fleet_Video {
+        width: 100%;
+        height: 100%;
+    }

@@ -1,0 +1,22 @@
+@import 'reset';
+@import "node_modules/rfs/scss";
+@import 'themeColors';
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+// @import 'base';
+// @import 'cookies';
+
+@import 'header';
+@import 'contenido';
+@import 'footer';
+
+
+@import 'home';
+
+@import 'plantillas';
+
+@import 'todaySeccion';
+@import 'customersSeccion';
+@import 'tomorrowSeccion';
+

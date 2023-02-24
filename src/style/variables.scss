@@ -1,0 +1,28 @@
+$information-phone6: "only screen and (max-width : 413px) ";
+
+$information-pitican: "only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3)";
+
+$information-phone-med: "only screen and (max-width : 360px)";
+$information-phone-small: "only screen and (max-width : 320px)";
+$information-phone: "only screen and (max-width : 525px)";
+$information-tablet640: "only screen and (min-width : 640px)";
+$information-tablet: "only screen and (min-width : 768px)";
+$information-desktop-small: "only screen and (max-width: 900px)";
+$information-desktop: "only screen and (min-width: 1024px)";
+$information-desktopBig: "only screen and (min-width: 1448px)";
+
+$information-customModalTablet: "only screen and (max-width: 918px)";
+$information-customModalPhone: "only screen and (max-width: 678px)";
+
+$information-phoneEdad: "only screen and (max-width : 670px)";
+$information-tabletCookies: "only screen and (max-width : 1000px)";
+
+/*Font Family*/
+$font-tit: 'Raleway', sans-serif;
+$font-other: 'Roboto', sans-serif;
+
+$font-RobotoSlab: 'Roboto Slab', serif;
+
+$font-crossoverReg: 'crossoverregular', serif;
+$font-crossoverLight: 'crossoverlight', serif;
+$font-crossoverExLight: 'crossoverextralight', serif;

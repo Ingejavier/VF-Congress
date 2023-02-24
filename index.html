@@ -1,0 +1,591 @@
+<!doctype html>
+<html>
+<head>
+<title>Vodafone Carbon Calculator MWC</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/dialog/dialog.css">
+<link rel="stylesheet" type="text/css" href="css/site.css">
+<link rel="stylesheet" type="text/css" href="dist/main.css">
+
+</head>
+<script>
+ 
+    window.onload = function () {
+        document.addEventListener('touchstart', function(e) {e.preventDefault()}, false);
+        document.addEventListener('touchmove', function(e) {e.preventDefault()}, false);
+    } 
+
+</script> 
+<body>
+<!-- DIV DEL LOADING Y TAPA DEL SITE -->
+<div id="tapa"></div>
+<div id="loadDiv">Cargado 0%</div>
+
+<div id="dialog">
+    <div id="topAlignText">
+        <div id="messageDial"></div>
+    </div>
+    <div id="closeDial">X</div> 
+</div>
+
+<div id="container"> 
+    <div id="homeDIV">
+        <div id="logoVF"><img src="img/logo.png" width="100%" height="100%"></div>
+
+        <div class="videowrapper"><video muted loop playsinline preload="metadata" id="mivideo"><source src="video/video_home.mp4" type="video/mp4"></video></div>
+        <div class="canvasContainer"><div class="canvasMask"></div></div>
+
+        <div class="titular"><img src="img/Swipeanddiscover.png" width="100%" height="100%"></div>
+        <div class="hastag"><img src="img/SwitchToGreen.png" width="100%" height="100%"></div>
+
+        <div class="titularHome"><img src="img/VodafonesSustainableJourney.png" width="100%" height="100%"></div>
+
+        <div id="start_boton">
+            <div class="sombrasSCR"><img src="img/sombra_boton.png" width="100%" height="100%"></div>
+            <div class="boundsSCR">
+                <div class="dragdropSCR"><img src="img/bola.png" draggable="false"></div> 
+            </div>
+        </div>
+
+        <div id="botonera">
+            <div id="today_boton">
+                <div class="sombrasSCR"><img src="img/sombra_boton.png" width="100%" height="100%"></div>
+                <div class="bgSCR"><img src="img/bg_today.png" width="100%" height="100%"></div>
+                <div class="txtSCR"><img src="img/VF today.png" width="100%" height="100%"></div>
+                <div class="boundsSCR bgsombra">
+                    <div class="dragdropSCR"><img src="img/bola.png" draggable="false"></div>
+                </div>
+            </div>
+
+            <div id="customers_boton">
+                <div class="sombrasSCR"><img src="img/sombra_boton.png" width="100%" height="100%"></div>
+                <div class="bgSCR"><img src="img/bg_customers.png" width="100%" height="100%"></div>
+                <div class="txtSCR"><img src="img/VF_customers.png" width="100%" height="100%"></div>
+                <div class="boundsSCR">
+                    <div class="dragdropSCR"><img src="img/bola.png" draggable="false"></div>
+                </div>
+            </div>
+
+            <div id="tomorrow_boton">
+                <div class="sombrasSCR"><img src="img/sombra_boton.png" width="100%" height="100%"></div>
+                <div class="bgSCR"><img src="img/bg_tomorrow.png" width="100%" height="100%"></div>
+                <div class="txtSCR"><img src="img/VF_tomorrow.png" width="100%" height="100%"></div>
+                <div class="boundsSCR">
+                    <div class="dragdropSCR"><img src="img/bola.png" draggable="false"></div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <div id="todayDIV">
+        <div class="close"><img src="img/cerrar.png"></div>
+        
+        <div class="barras">
+            
+            <div class="bar_cont1 barCont">
+                <div class="txt_1 textitos"><img src="img/today/today_renewable.png"></div>
+                <div class="barra_1 barritas">
+                    <img src="img/today/Renewable_back.jpg">
+                </div>
+            </div>
+
+            <div class="bar_cont2 barCont">
+                <div class="txt_2 textitos"><img src="img/today/today_solar.png"></div>
+                <div class="barra_2 barritas">
+                    <img src="img/today/Solar_back.jpg">
+                </div>
+            </div>
+
+            <div class="bar_cont3 barCont">
+                <div class="txt_3 textitos"><img src="img/today/today_machine.png"></div>
+                <div class="barra_3 barritas">
+                    <img src="img/today/Machine_back.jpg">
+                </div>
+            </div>
+
+            <div class="bar_cont4 barCont">
+                <div class="txt_4 textitos"><img src="img/today/today_low.png"></div>
+                <div class="barra_4 barritas">
+                    <img src="img/today/Low_back.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div id="renewableDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp3">
+                    <div class="titular_interior_temp3">Renewable power agreements</div>
+                    <div class="descripcion_interior_temp3">
+                        <span>How is Vodafone achieving its net-zero goal through Power Purchase Agreements.</span><br><br>
+
+                        <li>PPAs help Vodafone support the development of renewable energy generation in the markets where we operate.</li><br>
+                        <li>In Europe, 100% of the grid electricity Vodafone uses is provided via renewable tariffs, PPA or matched with renewable energy certificates.</li><br>
+                        <li>We are working to achieve the same in our African markets by 2025.</li><br>
+                        <li>By 2030, we aim to procure more than 30% of our total renewable electricity consumption through PPA contracts.</li><br>
+                        
+                    </div>
+                </div>
+
+                <div class="ladoDCHO_temp3">
+                    <div class="carta1"><img src="img/today/renewable/carta1.png"></div>
+                    <div class="carta2"><img src="img/today/renewable/carta2.png"></div>
+                    <div class="carta3"><img src="img/today/renewable/carta3.png"></div>
+                    <div class="carta4"><img src="img/today/renewable/carta4.png"></div>
+                </div>
+
+            </div>           
+        </div>
+
+        <div id="solarDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp3">
+                    <div class="titular_interior_temp3">Pioneering renewable energy onsite </div>
+                    <div class="descripcion_interior_temp3">
+                        <span>Vodafone strives to deploy renewable technologies to reduce either energy taken from the grid or diesel fuels from our off grid sites.</span><br><br>
+
+                        <span>Offices & technical buildings</span><br>
+                        We look to install rooftop solar PV on the sites we currently own.<br><br>
+
+                        <span>Base Stations & Mobile Access sites</span><br>
+                        We are working to install solar PV and convert our diesel generators to battery and or solar hybrids to reduce associated emission, by reducing the generator run time by half.<br>
+                        We are also trialling different wind technologies to further extend our renewable generation. 
+                    </div>
+                </div>
+
+                <div class="ladoDCHO_temp3">
+                    <div class="carta1"><img src="img/today/solar/carta1.png"></div>
+                    <div class="carta2"><img src="img/today/solar/carta2.png"></div>
+                    <div class="carta3"><img src="img/today/solar/carta3.png"></div>
+                    <div class="carta4"><img src="img/today/solar/carta4.png"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="machineDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp4">
+                    <div class="titular_interior_temp4">Reducing energy consumption in Data Centres</div>
+                    <div class="descripcion_interior_temp4 ">
+                        <span class="">Vodafone is optimising the energy consumption in its chain Data Centres.</span><br><br>
+
+                        <span class="negrita ">More than one third of the electricity</span> consumption in Vodafone Data Centres is due to the cooling systems to maintain the right temperature and humidity for our network elements. <br><br>
+
+                        We have installed <span class="negrita ">Machine Learning Cooling Controls</span> in <span class="negrita ">75 sites across Europe</span> with <span class="negrita ">tens of thousands of geo-localized</span> sensors measuring temperature and humidity.<br><br>
+                        
+                        This information is processed by an <span class="negrita ">AI algorithm</span> to optimise the cooling supply with a reduction of electricity consumption and improving reliability
+                    </div>
+                </div>
+
+                <div class="ladoDCHO_temp4">
+                   <div id="efecto">
+                        <div id="step1"><img src="img/today/machine/off_machine.png" width="100%" height="100%"></div>
+                        <div id="step2"><img src="img/today/machine/on_machine.png" width="100%" height="100%"></div>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="lowDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp1">
+                    <div class="titular_interior_temp1">Reducing Supply Chain carbon footprint</div>
+                    <div class="descripcion_interior_temp1 TXT_blanco">
+                        <span class="TXT_blanco">Vodafone is reducing its emissions in its supply chain by:</span><br><br>
+                        <ol>
+                            <li><span class="numerito">1. </span> <span class="negrita TXT_blanco">Carbon Disclosure Project (CDP)</span> - Deployed for over a decade which standardises and drives Vodafone’s suppliers to set targets, reduce emissions and adopt renewable energy.</li><br>
+                            <li><span class="numerito">2. </span> <span class="negrita TXT_blanco">ESG Criteria</span> - In contractual commitments, 20% of the decision-making criteria is based on the ESG criteria, with 5% specifically on planet and emissions reduction commitments.</li><br>
+                            <li><span class="numerito">3. </span> <span class="negrita TXT_blanco">Educational Workshops</span> - With our key suppliers to find hotspots to identify design, manufacturing and greater recycled material use opportunities to drive a ‘circular economy’.</li><br>
+                            <li><span class="numerito">4</span> <span class="negrita TXT_blanco">Zero Waste</span> - Driving zero waste with our target of 0% network waste by 2025 through creating and scaling marketplaces to drive greater reuse.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="ladoDCHO_temp1">
+                    <div class="datos">
+                        <div class="contenido_circulo">
+                            <div class="circleIMG">
+                                <img src="img/today/low/circulo.png" width="100%" height="100%">
+                                <img class="mascara_circulo" src="img/today/low/int_mask.png">
+                            </div>
+                            <div class="circleCONT"><img src="img/today/low/cont_circulo.png" width="100%" height="100%"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="customersDIV"> 
+        <div class="close"><img src="img/cerrar.png"></div>
+        
+        <div class="barras">
+            
+            <div class="bar_cont1 barCont">
+                <div class="txt_1 textitos"><img src="img/customers/customers_fires.png"></div>
+                <div class="barra_1 barritas">
+                    <img src="img/customers/fires_back.jpg">
+                </div>
+            </div>
+
+            <div class="bar_cont2 barCont">
+                <div class="txt_2 textitos"><img src="img/customers/customers_water.png"></div>
+                <div class="barra_2 barritas">
+                    <img src="img/customers/water_back.jpg">
+                </div>
+            </div>
+
+            <div class="bar_cont3 barCont">
+                <div class="txt_3 textitos"><img src="img/customers/customers_urbangreen.png"></div>
+                <div class="barra_3 barritas">
+                    <img src="img/customers/urbangreen_back.jpg">
+                </div>
+            </div>
+
+            <div class="bar_cont4 barCont">
+                <div class="txt_4 textitos"><img src="img/customers/customers_electriccars.png"></div>
+                <div class="barra_4 barritas">
+                    <img src="img/customers/electriccars_back.png">
+                </div>
+            </div>
+
+            <div class="bar_cont5 barCont">
+                <div class="txt_5 textitos"><img src="img/customers/customers_fleet.png"></div>
+                <div class="barra_5 barritas">
+                    <img src="img/customers/fleet_back.jpg">
+                </div>
+            </div>            
+        </div>
+
+        <div id="firesDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp1">
+                    <div class="titular_interior_temp1">Forest Fire Detection</div>
+                    <div class="descripcion_interior_temp1">
+                        <span>IoT sensors designed to detect forest fires during early stages. </span><br><br>
+                        The IoT sensors monitor the microclimate, measuring temperature, humidity, and air pressure and they can run maintenance-free for 10-15 years without the need for batteries.
+                        <br><br>
+                        This IoT ultra-fast fire detection solution connects the sensors to a cloud-based alert centre with  Vodafone IoT connectivity, a much faster-acting way for wildfire detection.
+
+                    </div>
+                </div>
+
+                <div class="ladoDCHO_temp1">
+                    <div class="datos">
+                        <div class="contenido_circulo">
+                            <div class="circleIMG">
+                                <img src="img/customers/fire/circulo.png" width="100%" height="100%">
+                                <img class="mascara_circulo" src="img/customers/fire/int_mask.png">
+                            </div>
+                            <div class="circleCONT"><img src="img/customers/fire/cont_circulo.png" width="100%" height="100%"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="waterDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp2">
+                        <div class="video">
+                            <video muted playsinline preload="metadata" id="water_Video"><source src="img/customers/water/water.mp4" type="video/mp4"></video>
+                            <div class="play"><img src="img/play.png"></div>
+                        </div>
+                </div>
+
+                <div class="ladoDCHO_temp2">
+                    <div class="titular_interior_temp2">Leveraging Water Resources</div>
+                    <div class="descripcion_interior_temp2">
+                        <span>IoT Water Monitoring.</span><br><br>
+
+                        <span class="negrita">Remote control of water flows</span><br><br>
+
+                        Understanding how the flow of water is changing today is essential to optimise water use in the future as well as prevent the potential catastrophe, like water flows.<br><br>
+
+                        Vodafone Business in collaboration with Oysta has developed special IoT sensors that <span class="negrita">allows administrations to monitor levels of flows remotely.</span> <br><br>
+
+                        Using Vodafone NB-IoT connectivity coverage, these long-lasting battery IoT sensors control reservoirs, sewers, wells, riverbeds and more; analysing data in real time and sending alerts and warnings. 
+                    </div>
+                </div>
+
+            </div>            
+        </div>   
+
+        <div id="urbangreenDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp2">
+                        <div class="video">
+                            <video muted playsinline preload="metadata" id="urbangreen_Video"><source src="img/customers/urbangreen/urban.mp4" type="video/mp4"></video>
+                            <div class="play"><img src="img/play.png"></div>
+                        </div>
+                </div>
+
+                <div class="ladoDCHO_temp2">
+                    <div class="titular_interior_temp2">Taking the most of Urban Green Areas</div>
+                    <div class="descripcion_interior_temp2 TXT_gris">
+                        <span class="TXT_gris">Public Green Areas Management</span><br><br>
+
+                        Green areas, parks, urban forest, etc. The best way for the management of urban green areas optimizing resources and anticipating needs.<br><br>
+
+                        <span class=".negrita TXT_gris">The value provided is the digitisation of the service</span><br>
+                        
+                        Which allows the administrations to save costs, reduce field operation time and improve the quality of communication of the service provided. <br><br>
+
+                        <span class=".negrita TXT_gris">Supporting decision-making without taking risks and saving costs</span><br>
+                        
+                        This enables administrations to manage the information in real time and have access to historical data
+                    </div>
+                </div>
+
+            </div>            
+        </div>   
+
+        <div id="electriccarsDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp1">
+                    <div class="titular_interior_temp1">Enabling Safe and Easy Charging for Electric Cars</div>
+                    <div class="descripcion_interior_temp1">
+                        <span>Digital Asset Broker</span><br><br>
+                        <li>DAB is a platform that allows users no longer have to use multiple apps for each charging point network that they use. A single app on their smartphone or tablet automatically communicates with any charging point.</li><br>
+                        <li>DAB-enabled cars and charge points enable zero-touch charging and payment experiences for electric vehicles. This devices will be able to autonomously trade between each other with zero intervention</li><br>
+                        <li>DAB ensures that all the electricity use to charge vehicles comes from renewable sources</li>   
+                    </div>
+                </div>
+
+                <div class="ladoDCHO_temp1">
+                    <div class="datos">
+                        <div class="contenido_circulo">
+                            <div class="circleIMG">
+                                <img src="img/customers/electriccars/circulo.png" width="100%" height="100%">
+                                <img class="mascara_circulo" src="img/customers/electriccars/int_mask.png">
+                            </div>
+                            <div class="circleCONT"><img src="img/customers/electriccars/cont_circulo.png" width="100%" height="100%"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="fleetDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp2">
+                        <div class="video">
+                            <video muted playsinline preload="metadata" id="fleet_Video"><source src="img/customers/fleet/fleet.mp4" type="video/mp4"></video>
+                            <div class="play"><img src="img/play.png"></div>
+                        </div>
+                </div>
+
+                <div class="ladoDCHO_temp2">
+                    <div class="titular_interior_temp2">Optimising Fleet<br>Management</div>
+                    <div class="descripcion_interior_temp2">
+                        <span>IoT Fleet Management Solution </span><br><br>
+                        Our Vodafone IoT Fleet Management solution helps drivers reduce fuel consumption through optimisation of journeys. 
+                        <br><br>
+                        This solution offers access to telematics technologies and data insights that will help optimise route management, vehicle maintenance, and driving behaviour.
+                        <br><br>
+                        Our customers can achieve their cost optimisation, sustainability, and safety objectives and even see how their carbon footprint can improve with our carbon enablement calculator. 
+                    </div>
+                </div>
+
+            </div>            
+        </div>    
+
+    </div>
+
+    <div id="tomorrowDIV">
+        <div class="close"><img src="img/cerrar.png"></div>
+        
+        <div class="barras">
+            
+            <div class="bar_cont1 barCont">
+                <div class="txt_1 textitos"><img src="img/tomorrow/tomorrow_openran.png"></div>
+                <div class="barra_1 barritas">
+                    <img src="img/tomorrow/openran_back.jpg">
+                </div>
+            </div>
+
+            <div class="bar_cont2 barCont">
+                <div class="txt_2 textitos"><img src="img/tomorrow/tomorrow_bigdata.png"></div>
+                <div class="barra_2 barritas">
+                    <img src="img/tomorrow/bigdata_back.jpg">
+                </div>
+            </div>
+
+            <div class="bar_cont3 barCont">
+                <div class="txt_3 textitos"><img src="img/tomorrow/tomorrow_circular.png"></div>
+                <div class="barra_3 barritas">
+                    <img src="img/tomorrow/ciruclar_back.jpg">
+                </div>
+            </div>
+
+            <div class="bar_cont4 barCont">
+                <div class="txt_4 textitos"><img src="img/tomorrow/tomorrow_fleet.png"></div>
+                <div class="barra_4 barritas">
+                    <img src="img/tomorrow/fleet_back.jpg">
+                </div>
+            </div>
+       
+        </div>
+
+        <div id="openranDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp3">
+                    <div class="titular_interior_temp3">Open RAN</div>
+                    <div class="descripcion_interior_temp3 TXT_blanco">
+                        <span class="TXT_blanco">Vodafone is building Europe’s first commercial Open RAN network in collaborations with its strategic vendors.<br>Open RAN will lead to a more cost-effective, secure, energy efficient and customer-focused network of the future.</span><br><br>
+
+                        <li class="TXT_blanco"><span class="negrita TXT_blanco">Energy Efficiency</span> - Open RAN allows for the deployment of energy-efficient network equipment that consumes less power and reduces carbon emissions. </li><br>
+                        <li class="TXT_blanco"><span class="negrita TXT_blanco">Reduced E-Waste</span> - Open RAN promotes the use of standardized, interoperable network equipment, which reduces the need for proprietary hardware and software. </li><br>
+                        <li class="TXT_blanco"><span class="negrita TXT_blanco">Bridging the Digital Divide</span> - Open RAN can help extend wireless coverage to remote and underserved areas, promoting digital inclusion, providing access to essential services, and reducing inequalities.</li><br>
+                        <li class="TXT_blanco"><span class="negrita TXT_blanco">Innovation</span> - Open RAN enables new vendors to enter in the market offering new network solutions with new and more sustainable technologies and business models.</li><br>
+                        <li class="TXT_blanco"><span class="negrita TXT_blanco">Disaster Response</span> - Open RAN can facilitate the deployment of rapidly deployable wireless networks in emergency situations where communication infrastructure may be damaged or destroyed.</li>
+                    </div>
+                </div>
+
+                <div class="ladoDCHO_temp3">
+                    <div class="carta1"><img src="img/today/solar/carta1.png"></div>
+                    <div class="carta2"><img src="img/today/solar/carta2.png"></div>
+                    <div class="carta3"><img src="img/today/solar/carta3.png"></div>
+                    <div class="carta4"><img src="img/today/solar/carta4.png"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="bigdataDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp3">
+                    <div class="titular_interior_temp3">Machine Learning</div>
+                    <div class="descripcion_interior_temp3  TXT_blanco">
+                        <!--<span class="TXT_blanco">Vodafone is building Europe’s first commercial Open RAN network in collaborations with its strategic vendors. Open RAN will lead to a more cost-effective, secure, energy efficient and customer-focused network of the future.</span><br><br>-->
+                        <li class="TXT_blanco">Across our global mobile network, we are using software and big data analytics on the Google platform to understand patterns of data traffic on our network and optimise energy use by powering equipment up and down.  </li><br>
+                        <li class="TXT_blanco">We are also implementing innovative machine learning algorithms to analyse traffic patterns in real-time, allowing us to reduce mobile data traffic congestion and ultimately reduce energy consumption.</li>
+                    </div>
+                </div>
+
+                <div class="ladoDCHO_temp3">
+                    <div class="carta1"><img src="img/tomorrow/bigdata/carta1.png"></div>
+                    <div class="carta2"><img src="img/tomorrow/bigdata/carta2.png"></div>
+                    <div class="carta3"><img src="img/tomorrow/bigdata/carta3.png"></div>
+                    <div class="carta4"><img src="img/tomorrow/bigdata/carta4.png"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="circularDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp3">
+                    <div class="titular_interior_temp3">Circular Economy - reducing e-waste</div>
+                    <div class="descripcion_interior_temp3">
+                        <span class="TXT_blanco">In Vodafone we are reducing our e-waste with a range of initiatives. We are also a founding member of the Eco Rating consortium.</span><br><br>
+                        <span class="TXT_red">NEW partnership with WWF.</span><br><br>
+                        <span class="TXT_blanco TXT_corrido">We launched our “1 million phone for the planet” campaign to:</span><br>
+
+                        <ol>
+                            <li class="TXT_blanco"><span class="numerito">1. </span> Raise consumer awareness of e-waste </li><br>
+                            <li class="TXT_blanco"><span class="numerito">2. </span> Incentivise our customers to bring back their used devices for trade-in, donation or recycling.</li><br>
+                            <li class="TXT_blanco"><span class="numerito">3. </span> Increase the flow of devices back to Vodafone so that we can learn about implementing a circular system at scale</li><br>
+                        </ol>
+
+                    </div>
+                </div>
+
+                <div class="ladoDCHO_temp3">
+                    <div class="carta1"><img src="img/tomorrow/circular/carta1.png"></div>
+                    <div class="carta2"><img src="img/tomorrow/circular/carta2.png"></div>
+                    <div class="carta3"><img src="img/tomorrow/circular/carta3.png"></div>
+                    <div class="carta4"><img src="img/tomorrow/circular/carta4.png"></div>
+                </div>
+
+            </div>
+        </div>   
+
+        <div id="fleettomorrowDIV">
+            <div class="container_HIGHT">
+
+                <div class="ladoIZQ_temp2">
+                        <div class="video">
+                            <video muted playsinline preload="metadata" id="fleettomorrow_Video"><source src="img/tomorrow/fleet/fleet.mp4" type="video/mp4"></video>
+                            <div class="play"><img src="img/play.png"></div>
+                        </div>
+                </div>
+
+                <div class="ladoDCHO_temp2">
+                    <div class="titular_interior_temp2">Electric Fleet</div>
+                    <div class="descripcion_interior_temp2">
+                        <span>Vodafone is committed to transition its European fleet into fully electric by the end of 2028.</span><br><br>
+
+                        <li>In order to reduce emissions, we are phasing our internal combustion vehicles by ensuring that from April 2024 only fully EVs or equivalent will be ordered by the company in Europe.</li><br><br>
+                        <li>In FY22/23, 54% of Vodafone’s European fleet was fully electric or hybrid and we established the Vodafone Green Fleet Steering group to facilitate a transition to an electric fleet across all markets.</li><br><br>
+                        <li>Vodafone Business Fleet Analytics keeps fleet management life simple, with real-time data supporting business decisions – all to protect teams, control costs & maximise efficiency, & reduce carbon emissions.</li>
+
+                    </div>
+                </div>
+
+            </div>            
+        </div>            
+
+    </div>
+    
+    
+</div>
+
+
+
+</body>
+<script src="dist/main.js"></script>
+</html>
+
+
+<!--
+
+    Plantilla 1
+
+                <div class="ladoIZQ_temp1">
+                    <div class="titular_interior">Forest Fire Detection</div>
+                    <div class="descripcion_interior">
+                        <span>IoT sensors designed to detect forest fires during early stages. </span><br><br>
+                        The IoT sensors monitor the microclimate, measuring temperature, humidity, and air pressure and they can run maintenance-free for 10-15 years without the need for batteries.
+                        <br><br>
+                        This IoT ultra-fast fire detection solution connects the sensors to a cloud-based alert centre with  Vodafone IoT connectivity, a much faster-acting way for wildfire detection.
+
+                    </div>
+                </div>
+
+                <div class="ladoDCHO_temp1">
+                    <div class="datos">
+                        <div class="contenido_circulo">
+                            <div class="circleIMG">
+                                <img src="img/today/renewable/circulo.png" width="100%" height="100%">
+                                <img class="mascara_circulo" src="img/today/renewable/int_mask.png">
+                            </div>
+                            <div class="circleCONT"><img src="img/today/renewable/cont_circulo.png" width="100%" height="100%"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+-->

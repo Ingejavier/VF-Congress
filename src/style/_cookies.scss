@@ -1,0 +1,168 @@
+
+/*
+    Politica de cookies
+*/
+
+
+    .capa_cookies
+    {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        z-index: 999;
+        width: 100%;
+        background: $bg-color-cookies;
+        font-family: $font-txt;
+        font-size: 12px;
+        color: $text-color-cookies;
+        line-height: 1.2;
+        padding: 20px;
+        @include clearfix;
+
+        @media #{$information-tabletCookies} and (orientation : landscape){
+            // position: relative;
+            // width: auto;
+            padding: 41px 11px;
+        }          
+        @media #{$information-phone} and (orientation : portrait){
+            // position: relative;
+            // width: auto;
+            padding: 41px 11px;
+        }
+
+
+        .cookies__cerrar{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+            width:20px;
+            height: 20px;
+            cursor: pointer;
+        }
+               
+
+        .cont-cookies {
+
+            position: relative;
+            text-align: center;
+            width: 100%;
+            max-width: 1084px;
+            margin: 0 auto;
+            @include clearfix;
+        
+            .texto_leg {
+
+                width: 70%;
+                float: left;
+                @include clearfix;
+
+                @media #{$information-tabletCookies} {
+                        width: 90%;
+                        float: none;
+                }
+                @media #{$information-tabletCookies} and (orientation : landscape){
+                    width: 100%;
+                }
+                p {
+                    width: 98%;
+                    cursor: pointer;
+                    text-align: left;
+                    padding-top: 2px;
+                    margin: 0px auto;
+                    font-weight: 400i;
+                    font-size: 9px;
+
+                    @media #{$information-tabletCookies} and (orientation : landscape){
+                        // font-size: 6px;
+                    }                    
+        
+                    &:first-child {
+                        padding-top: 0px;
+                    }
+
+                    .enlace_po_coo {
+                        text-decoration: underline;
+                        @include transition(opacity);
+                        font-family: $font-txt;
+                        font-weight: 400i;
+                        font-size: 9px;
+                        color: $text-color-cookies;
+                        @media #{$information-tabletCookies} and (orientation : landscape){
+                            // font-size: 6px;
+                        }                             
+
+                        &:hover {
+                            opacity: .5;
+                        }                            
+                    }
+                }    
+            }
+
+            .botones {
+                
+                width: 29%;
+                float: left;
+                margin-right: 10px;
+                @include clearfix;
+                @media #{$information-tabletCookies} {
+                        // width: 100%;
+                        // margin: 20px auto 0px auto;
+                        // float: left;
+                        // margin-right: 0px;
+                        width: 100%;
+                        max-width: 320px;
+                        margin: 20px auto;
+                        float: none;                        
+                }
+                @media #{$information-tabletCookies} and (orientation : landscape){
+                    width: 100%;
+                }                 
+
+                .cont_btnCookies {
+                    width: 100%;
+                    max-width: 125px;
+                    margin: 0px 10px;
+                    text-align: center;
+                    font-family: $font-txt;
+                    font-size: 16px;
+                    display: inline-block;
+                    opacity: 1;
+                    cursor: pointer;
+                    float: left;
+
+                    @include transition(opacity);
+
+                    @media #{$information-tabletCookies} and (orientation : landscape){
+                        margin: 0px 7px;
+                    }
+
+                    .btnCookies {
+                        display: block;
+                        text-decoration: none;
+                        width: 100%;
+                        height: 31px;
+                        font-family: $font-txt;
+                        font-size: 16px;
+                        color: #000000;
+                        border: 2px solid #a2a198;                        
+                        line-height: 31px;
+                        cursor: pointer;
+                        @include transition(all 0.3s ease-out);
+
+                        @media #{$information-tabletCookies} and (orientation : landscape){
+                            height: 24px;
+                            font-size: 16px;
+                            line-height: 24px;
+                        }                        
+
+                        &:hover {
+                            background-color: $color-btn-cookies;
+                            color: #ffffff;
+                            border: 2px solid $color-btn-cookies;
+                        }
+                    }
+                }
+            }
+        }
+    }//fin capa_cookies

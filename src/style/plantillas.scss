@@ -1,0 +1,396 @@
+/*
+    PLANTILLA 1
+*/
+
+    .container_HIGHT {
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-around;
+
+        height: 100vh;
+    }
+
+        .ladoIZQ_temp1 {
+            /*background-color: blueviolet;*/
+
+            width: 40%;
+
+            display: flex;
+            flex-direction: column; 
+        }
+
+                .titular_interior_temp1 {
+                    position: relative;
+                    left: 10%;
+                    margin-top: 12%;
+                    width: 86%;
+                    color: #e30613;
+                    font-family: VodafoneRG-Bold;
+                    font-size: calc(42px + 1.2vw);
+
+                    opacity: 0;
+                }
+
+                .descripcion_interior_temp1 span{
+                    color: #363636;
+                    font-family: VodafoneRG-Bold;
+                    font-size: calc(24px + .2vw);
+                }
+
+                .descripcion_interior_temp1 {
+                    position: relative;
+                    left: 10%;
+                    width: 78%;
+                    margin-top: 2%;
+                    color: #363636;
+                    font-family: VodafoneLT;
+                    font-size: calc(15px + .2vw);
+                    
+                    line-height: 23px;
+
+                    opacity: 0;
+                }
+
+        .ladoDCHO_temp1 {
+            /*background-color: brown;*/
+            width: 60%;
+        }
+
+                .contenido_circulo {
+                    width: 100%;
+                    height: 100%;
+                    min-height: 100vh;
+                    /*background-color: black;*/
+                }
+
+                .circleIMG {
+                    position: absolute;
+                    height: 100%;
+                    max-height: 880px;
+                    top: 5%;
+
+                    transform-origin: center center;
+                    transform: scale(0);
+                }
+
+                .circleCONT {
+                    position: absolute;
+                    height: 100%;
+                    max-height: 880px;
+                    top: 5%;
+
+                    transform-origin: center center;
+                    transform: scale(.9);
+                    opacity: 0;
+                }
+
+                .mascara_circulo {
+                    left: 32%;
+                    position: absolute;
+                    top: 32%;
+                    width: 35.3%;
+                    --clip:0%;
+                    clip-path: circle(0%);
+                }
+  
+                
+/*
+    PLANTILLA 2
+*/
+  
+
+.ladoIZQ_temp2 {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column; 
+}
+
+.video {
+    opacity: 0;
+}
+
+.play {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    margin-left: -39px;
+    margin-top: -44px;
+
+    cursor: pointer;
+}
+
+.ladoDCHO_temp2 {
+    width: 50%;
+}
+
+    .titular_interior_temp2 {
+        position: relative;
+        left: 7%;
+        margin-top: 12%;
+        width: 80%;
+
+        color: #e30613;
+        font-family: VodafoneRG-Bold;
+        font-size: calc(46px + 1.2vw);
+
+        opacity: 0;
+    }
+
+    .descripcion_interior_temp2 span{
+        color: white;
+        font-family: VodafoneRG-Bold;
+        font-size: calc(22px + .2vw);
+    }
+
+    .descripcion_interior_temp2 {
+        position: relative;
+        left: 7%;
+        width: 60%;
+        margin-top: 2%;
+        color: white;
+        font-family: VodafoneLT;
+        font-size: calc(15px + .2vw);
+        
+        line-height: 23px;
+
+        opacity: 0;
+    }
+
+    .video {
+        position: relative;
+
+        margin-top: 13%;
+        left: 10%;
+        width: 88%;
+
+        aspect-ratio: 16/9;
+
+        background-color: #000;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-top: solid 3px white;
+        border-bottom: solid 3px white;
+    }
+
+
+
+/*
+    PLANTILLA 3
+*/
+
+
+.container_HIGHT {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+
+    height: 100vh;
+}
+
+    .ladoIZQ_temp3 {
+        /*background-color: blueviolet;*/
+
+        width: 40%;
+
+        display: flex;
+        flex-direction: column; 
+    }
+
+            .titular_interior_temp3 {
+                position: relative;
+                left: 10%;
+                margin-top: 12%;
+                width: 86%;
+                color: #e30613;
+                font-family: VodafoneRG-Bold;
+                font-size: calc(42px + .8vw);
+
+                opacity: 0;
+            }
+
+            .descripcion_interior_temp3 span{
+                color: #363636;
+                font-family: VodafoneRG-Bold;
+                font-size: calc(23px + .2vw);
+            }
+
+            .descripcion_interior_temp3 {
+                position: relative;
+                left: 10%;
+                width: 78%;
+                margin-top: 2%;
+                color: #363636;
+                font-family: VodafoneLT;
+                font-size: calc(14px + .2vw);
+                
+                line-height: 23px;
+
+                opacity: 0;
+            }
+
+    .ladoDCHO_temp3 {
+        /*background-color: brown;*/
+        width: 60%;
+    }
+
+        .carta1 {
+            position: absolute;
+            transform-origin: center center;
+            transform: translateX(600px) translateY(-100px) rotate(0deg);
+            opacity: 0;
+            z-index: 101;
+        }
+        .carta2 {
+            position: absolute;
+            transform-origin: center center;
+            transform: translateX(600px) translateY(400px) rotate(0deg);
+            opacity: 0;
+            z-index: 102;
+        }
+        .carta3 {
+            position: absolute;
+            transform-origin: center center;
+            transform: translateX(600px) translateY(800px) rotate(0deg);
+            opacity: 0;
+            z-index: 103;
+        }
+        .carta4 {
+            position: absolute;
+            transform-origin: center center;
+            transform: translateX(600px) translateY(1200px) rotate(0deg);
+            opacity: 0;
+            z-index: 104;
+        }                
+
+/*
+    PLANTILLA 3
+*/
+
+
+.container_HIGHT {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+
+    height: 100vh;
+}
+
+    .ladoIZQ_temp4 {
+        /*background-color: blueviolet;*/
+
+        width: 40%;
+
+        display: flex;
+        flex-direction: column; 
+    }
+
+            .titular_interior_temp4 {
+                position: relative;
+                left: 10%;
+                margin-top: 12%;
+                width: 86%;
+                color: #e30613;
+                font-family: VodafoneRG-Bold;
+                font-size: calc(42px + .8vw);
+
+                opacity: 0;
+            }
+
+            .descripcion_interior_temp4 span{
+                color: #363636;
+                font-family: VodafoneRG-Bold;
+                font-size: calc(23px + .2vw);
+            }
+
+            .descripcion_interior_temp4 {
+                position: relative;
+                left: 10%;
+                width: 78%;
+                margin-top: 2%;
+                color: #363636;
+                font-family: VodafoneLT;
+                font-size: calc(14px + .2vw);
+                
+                line-height: 23px;
+
+                opacity: 0;
+            }
+
+    .ladoDCHO_temp4 {
+        /*background-color: brown;*/
+        width: 60%;
+    }
+
+        #efecto {
+            position: relative;
+
+            left: 20%;
+            top: 15%;
+
+            width: 80% ;
+            max-width: 613px;
+            aspect-ratio: 1.07/1;
+
+            opacity: 0;
+        }
+
+        #step1 {
+            position: absolute;
+            opacity: 1;
+
+            z-index: 101;
+        }
+        #step2 {
+            position: absolute;
+            opacity: 1;
+
+            z-index: 102;
+        }
+
+
+
+
+
+/*
+
+Generales plantillas
+
+*/
+
+.numerito {
+    color: #e30614 !important;
+    font-size: calc(12px + .2vw) !important;
+    font-family: VodafoneRG-Bold !important;
+
+}
+
+.negrita { 
+    font-family: VodafoneRG-Bold !important;
+    font-size: calc(14px + .2vw) !important;
+}
+
+.TXT_blanco {
+    color: white !important;
+}
+
+.TXT_corrido {
+    font-family: VodafoneLT !important;
+    font-size: calc(14px + .2vw) !important;
+}
+
+.TXT_gris {
+    color:  #363636!important;
+}
+
+.TXT_red {
+    color: #e30614 !important;
+    font-family: VodafoneRG-Bold !important;
+    font-size: calc(22px + .2vw) !important;
+}
+

@@ -1,0 +1,134 @@
+@mixin clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  
+@mixin box-sizing{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// .box{
+//   @include border-radius(3px);
+// }
+
+
+@mixin user-select{
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none;
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+// @include user-select();
+
+
+
+/* Opciones($prop): color, background-color,opacity,..., all */
+@mixin transition($prop) {
+	-webkit-transition: $prop; 
+   -moz-transition: $prop; 
+     -o-transition: $prop; 
+        transition: $prop; /* ease-out */
+
+-webkit-transition-timing-function: ease-out; 
+   -moz-transition-timing-function: ease-out; 
+     -o-transition-timing-function: ease-out; 
+        transition-timing-function: ease-out; /* ease-out */
+}
+
+/*PlaceHolder*/
+
+@mixin placeHolder($color,$lineHeightDesk,$lineHeightTab) {
+  &::-webkit-input-placeholder { 
+    opacity: 1; 
+    color: $color; 
+    line-height: $lineHeightDesk;
+    @media #{$information-tablet} {
+        line-height: $lineHeightTab;
+    }                            
+  }
+  &::-ms-input-placeholder { 
+    opacity: 1; 
+    color: $color; 
+    line-height: $lineHeightDesk;
+    @media #{$information-tablet} {
+        line-height: $lineHeightTab;
+    }                            
+  }
+  &::placeholder { 
+    opacity: 1; 
+    color: $color; 
+    line-height: $lineHeightDesk;
+    @media #{$information-tablet} {
+        line-height: $lineHeightTab;
+    }                            
+  }  
+}
+
+// Overflow Ellipsis
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}                      
+
+@mixin user-select{
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none;
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+/*font-size: get-vw(30px);*/
+/*padding-top:get-vw(50px);*/
+@function get-vw($target) {
+  $vw-context: (1920 * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+}
+
+@mixin max-vw($attr, $value) {
+  $value: strip-units($value);
+  @media screen and (min-width: 1440px) {
+    #{$attr}: ($value/100) * 1440px;
+  }
+}
+
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}

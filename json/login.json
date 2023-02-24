@@ -1,0 +1,112 @@
+  [
+    {
+      "segundero": 
+      [
+        {
+        "paso1":"2",
+        "paso2":"6",
+        "paso3":"10",
+        "paso4":"14"
+        }
+      ]
+    },
+    {
+    "castellano": 
+    [
+        { 
+          "compartir": 
+          [
+            {
+              "texto": "Comparte tu energia",
+              "texto_mobile": "Comparte",
+              "url": "https://endesanavidad.es/languaje='castellano'",
+              "fb_texto": "Castellano Castellano Castellano",
+              "tw_texto": "Castellano Castellano Castellano",
+              "mail_subject": "Castellano Castellano Castellano",
+              "mail_body": "Castellano Castellano Castellano"
+            }
+          ]
+        },
+        {
+          "mensajes": 
+          [
+            {
+              "msg1_1": "Un abrazo te llena ",
+              "msg1_2": "de energia positiva&nbsp;&nbsp;&nbsp;&nbsp;",
+
+              "msg2_1": "Abraza a quien&nbsp;&nbsp;&nbsp;&nbsp;",
+              "msg2_2": "mas quieres...",
+
+              "msg3_1": "Transmitir emociones&nbsp;&nbsp;&nbsp;&nbsp;",
+              "msg3_2": "sin palabras..."
+            }
+          ]
+        }
+    ]
+  },
+  {
+    "catalan": 
+    [
+        { 
+          "compartir": [
+            {
+              "texto": "Comparteix la teva energia",
+              "texto_mobile": "Comparteix",
+              "url": "https://endesanavidad.es/languaje='catalan'",
+              "fb_texto": "Catalan Catalan Catalan",
+              "tw_texto": "Catalan Catalan Catalan",
+              "mail_subject": "Catalan Catalan Catalan",
+              "mail_body": "Catalan Catalan Catalan"
+            }
+          ]
+        },
+        {
+          "mensajes": [
+            {
+              "msg1_1": "CAT-Un abrazo te llena ",
+              "msg1_2": "de energia positiva&nbsp;&nbsp;&nbsp;&nbsp;",
+
+              "msg2_1": "CAT-Abraza a quien&nbsp;&nbsp;&nbsp;&nbsp;",
+              "msg2_2": "mas quieres",
+
+              "msg3_1": "CAT-Transmitir emociones&nbsp;&nbsp;&nbsp;&nbsp;",
+              "msg3_2": "sin palabras..."
+            }
+          ]
+        }
+    ]
+  },
+    {
+    "euskera": 
+    [
+        { 
+          "compartir": [
+            {
+              "texto": "Partekatu zure energia",
+              "texto_mobile": "Partekatu",
+              "url": "https://endesanavidad.es/languaje='euskera'",
+              "fb_texto": "Euskera Euskera Euskera",
+              "tw_texto": "Euskera Euskera Euskera",
+              "mail_subject": "Euskera Euskera Euskera",
+              "mail_body": "Euskera Euskera Euskera"
+            }
+          ]
+        },
+        {
+          "mensajes": [
+            {
+              "msg1_1": "EUS-Un abrazo te llena ",
+              "msg1_2": "de energia positiva&nbsp;&nbsp;&nbsp;&nbsp;",
+
+              "msg2_1": "EUS-Abraza a quien&nbsp;&nbsp;&nbsp;&nbsp;",
+              "msg2_2": "mas quieres",
+
+              "msg3_1": "EUS-Transmitir emociones&nbsp;&nbsp;&nbsp;&nbsp;",
+              "msg3_2": "sin palabras..."
+            }
+          ]
+        }
+    ]
+  }
+]
+
